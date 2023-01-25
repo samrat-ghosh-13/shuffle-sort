@@ -1,0 +1,330 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset CSS ends here. */
+
+/* Actual CSS Starts from here.  */
+@font-face {
+	font-family: Maersk Headline;
+	src: url(https://assets.maerskline.com/sharedfonts/maeu/headline/MaerskHeadline-Regular.woff2);
+}
+
+.app {
+	margin: 0;
+	padding: 0;
+	font-family: Maersk Headline, -apple-system, BlinkMacSystemFont,
+		Microsoft JhengHei, Microsoft Yahei, STXihei, sans-serif;
+}
+
+@media screen and (min-width: 960px) {
+	.app {
+		background: #efefef;
+	}
+}
+
+.app__header {
+	background: #333;
+	color: #fff;
+	padding: 1.5rem;
+	box-shadow: 0px 0px 0px 0.5rem rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
+
+@media screen and (min-width: 960px) {
+	.app__header {
+		background: #fff;
+		color: #000;
+	}
+}
+
+.app__contents {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (min-width: 960px) {
+	.app__contents {
+		flex-direction: row-reverse;
+		align-items: flex-start;
+	}
+}
+
+.app__contents__buttons {
+	margin: 10px 0;
+}
+
+@media screen and (min-width: 960px) {
+	.app__contents__buttons {
+		margin: 0;
+	}
+}
+
+.app__contents__items {
+	display: grid;
+	width: 90%;
+	grid-template-columns: auto;
+}
+
+@media screen and (min-width: 960px) {
+	.app__contents__items {
+		display: grid;
+		width: 100%;
+		grid-template-columns: auto auto auto;
+		margin-top: 8px;
+	}
+}
+
+.app__contents__items__item {
+	height: 60px;
+	color: #000;
+	font-size: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (min-width: 960px) {
+	.app__contents__items__item {
+		height: 180px;
+		font-size: 6em;
+		color: #fff;
+	}
+}
+
+.app__contents__items__item--1,
+.app__contents__items__item--2,
+.app__contents__items__item--3,
+.app__contents__items__item--4,
+.app__contents__items__item--5,
+.app__contents__items__item--6,
+.app__contents__items__item--7,
+.app__contents__items__item--8,
+.app__contents__items__item--9 {
+	background: #efefef;
+	margin-bottom: 10px;
+}
+
+.app__contents__items__item--3,
+.app__contents__items__item--5,
+.app__contents__items__item--9 {
+	border-left: 0.3em solid #2f454e;
+}
+
+.app__contents__items__item--2,
+.app__contents__items__item--4 {
+	border-left: 0.3em solid #2b8ead;
+}
+
+.app__contents__items__item--1,
+.app__contents__items__item--8 {
+	border-left: 0.3em solid #6f98a8;
+}
+
+.app__contents__items__item--6,
+.app__contents__items__item--7 {
+	border-left: 0.3em solid #bfbfbf;
+}
+
+@media screen and (min-width: 960px) {
+	.app__contents__items__item--1,
+	.app__contents__items__item--2,
+	.app__contents__items__item--3,
+	.app__contents__items__item--4,
+	.app__contents__items__item--5,
+	.app__contents__items__item--6,
+	.app__contents__items__item--7,
+	.app__contents__items__item--8,
+	.app__contents__items__item--9 {
+		margin: 0;
+	}
+	.app__contents__items__item--3,
+	.app__contents__items__item--5,
+	.app__contents__items__item--9 {
+		background: #2f454e;
+	}
+
+	.app__contents__items__item--2,
+	.app__contents__items__item--4 {
+		background: #2b8ead;
+	}
+
+	.app__contents__items__item--1,
+	.app__contents__items__item--8 {
+		background: #6f98a8;
+	}
+
+	.app__contents__items__item--6,
+	.app__contents__items__item--7 {
+		background: #bfbfbf;
+	}
+}
+
+.app__contents__buttons__btn {
+	overflow: visible;
+	display: inline-block;
+	width: 135px;
+	font-family: inherit;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin: 10px;
+	padding: 0.8em 2em;
+	background: #72c3dc;
+	color: #fff;
+	border: 1px solid #2b8ead;
+	border-radius: 5px;
+	box-shadow: 0px 5px 0px #2b8ead;
+	text-shadow: 1px 1px 1px #2b8ead;
+	font-weight: 400;
+	transition: All 250ms ease;
+}
+
+@media screen and (min-width: 960px) {
+	.app__contents__buttons__btn {
+		padding: 15px 50px;
+		display: block;
+		margin: 25px 22px 0 10px;
+		width: 240px;
+	}
+}
+
+.app__contents__buttons__btn:active {
+	box-shadow: none;
+	position: relative;
+	top: 0.25rem;
+}
+
+.app__footer {
+	text-align: center;
+	color: #333;
+	padding: 0.5rem;
+}
