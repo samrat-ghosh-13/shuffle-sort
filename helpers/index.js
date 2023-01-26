@@ -1,4 +1,20 @@
 /**
+ * @name debounce
+ * @params func, delay
+ * @description takes func and delay and makes sure that the code is only triggered once per user input
+ * @returns func with args after delay
+ */
+const debounce = (func, delay = 300) => {
+	let timer;
+	return (...args) => {
+		clearTimeout(timer);
+		timer = setTimeout(() => {
+			func.apply(this, args);
+		}, delay);
+	};
+};
+
+/**
  * @name htmlCollectionToArray
  * @param htmlItems
  * @description takes HTMLCollection as input and returns an array of items
@@ -52,6 +68,9 @@ const shuffle = () => {
 	renderItems(list, randomItemsArr);
 };
 
+// debounces the shuffle method
+const handleShuffle = debounce(() => shuffle(), 500);
+
 /**
  * @name sort
  * @param none
@@ -67,3 +86,6 @@ const sort = () => {
 
 	renderItems(list, itemsArr);
 };
+
+// debounces the sort method
+const handleSort = debounce(() => sort(), 500);
