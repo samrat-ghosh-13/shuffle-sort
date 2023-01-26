@@ -1,0 +1,22 @@
+{
+	"name": "shuffle",
+	"version": "1.0.0",
+	"description": "",
+	"source": "./src/index.html",
+	"scripts": {
+		"test": "jest",
+		"start": "parcel --port 3000",
+		"build": "npx rimraf ./dist && parcel build",
+		"serve": "npm run build && npx serve -s ./dist"
+	},
+	"author": "Samrat Ghosh",
+	"license": "ISC",
+	"devDependencies": {
+		"jest": "^29.4.1",
+		"jest-environment-jsdom": "^29.4.1",
+		"parcel": "^2.8.3"
+	},
+	"jest": {
+		"testEnvironment": "jest-environment-jsdom"
+	}
+}
