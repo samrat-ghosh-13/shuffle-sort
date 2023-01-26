@@ -6,7 +6,7 @@ The Repository contains a project for shuffling and sorting cards using HTML5, C
 
 The Project is hosted using Github pages.
 
-> https://samrat-ghosh-13.github.io/shuffle-sort/
+> <https://samrat-ghosh-13.github.io/shuffle-sort/>
 
 ## Functionality
 
@@ -18,7 +18,7 @@ The Project is hosted using Github pages.
 
 - This project uses Reset CSS to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on.
 
-> https://meyerweb.com/eric/tools/css/reset/
+> <https://meyerweb.com/eric/tools/css/reset/>
 
 ## Project Structure
 
