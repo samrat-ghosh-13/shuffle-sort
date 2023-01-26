@@ -2,30 +2,31 @@
  * @name htmlCollectionToArray
  * @param htmlItems
  * @description takes HTMLCollection as input and returns an array of items
- * @returns none
+ * @returns Array containing HTML Items that can be used to sort and shuffle items
  */
 const htmlCollectionToArray = (htmlItems) => {
 	let itemsArr = [];
-	for (let i in htmlItems) {
-		if (htmlItems[i].nodeType === 1) {
-			// validating the node is an element node, the nodeType property will return 1
-			itemsArr.push(htmlItems[i]);
+	Array.from(htmlItems).forEach((item) => {
+		if (item.nodeType === 1) {
+			// validating the node is an element node, 
+			// the nodeType property will return 1
+			itemsArr.push(item);
 		}
-	}
+	});
 	return itemsArr;
 };
 
 /**
- * @name htmlCollectionToArray
+ * @name renderItems
  * @params list
  * @description takes items, list and renders the items on DOM
  * @returns none
  */
 const renderItems = (list, items) => {
-	const fragment = document.createDocumentFragment();
-	for (let i = 0; i < items.length; i++) {
-		fragment.appendChild(items[i]);
-	}
+	const fragment = new DocumentFragment();
+	items.forEach((item) => {
+		fragment.appendChild(item);
+	});
 	list.appendChild(fragment);
 };
 
@@ -63,7 +64,7 @@ const sort = () => {
 	let items = list?.childNodes;
 	let itemsArr = htmlCollectionToArray(items);
 
-	itemsArr.sort((a, b) => a.innerHTML - b.innerHTML);
+	itemsArr.sort((a, b) => a.innerText - b.innerText);
 
 	renderItems(list, itemsArr);
 };
