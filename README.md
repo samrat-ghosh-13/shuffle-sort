@@ -6,7 +6,7 @@ The Repository contains a project for shuffling and sorting cards using HTML5, C
 
 The Project is hosted using Github pages.
 
->
+> https://samrat-ghosh-13.github.io/shuffle-sort/
 
 ## Functionality
 
