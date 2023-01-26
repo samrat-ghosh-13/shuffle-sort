@@ -1,139 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol,
-ul {
-	list-style: none;
-}
-blockquote,
-q {
-	quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: "";
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* Reset CSS ends here. */
-
-/* Actual CSS Starts from here.  */
-@font-face {
-	font-family: Maersk Headline;
-	src: url(https://assets.maerskline.com/sharedfonts/maeu/headline/MaerskHeadline-Regular.woff2);
-}
-
 .app {
 	margin: 0;
 	padding: 0;
@@ -143,15 +7,15 @@ table {
 
 @media screen and (min-width: 960px) {
 	.app {
-		background: #efefef;
+		background: var(--white);
 	}
 }
 
 .app__header {
-	background: #333;
-	color: #fff;
+	background: var(--dark-charcoal);
+	color: var(--white);
 	padding: 1.5rem;
-	box-shadow: 0px 0px 0px 0.5rem rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 0 0.5rem var(--black-light);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -160,8 +24,8 @@ table {
 
 @media screen and (min-width: 960px) {
 	.app__header {
-		background: #fff;
-		color: #000;
+		background: var(--white);
+		color: var(--black);
 	}
 }
 
@@ -180,7 +44,7 @@ table {
 }
 
 .app__contents__buttons {
-	margin: 10px 0;
+	margin: 0.5rem 0;
 }
 
 @media screen and (min-width: 960px) {
@@ -200,14 +64,14 @@ table {
 		display: grid;
 		width: 100%;
 		grid-template-columns: auto auto auto;
-		margin-top: 8px;
+		margin-top: 0.5rem;
 	}
 }
 
 .app__contents__items__item {
-	height: 60px;
-	color: #000;
-	font-size: 3em;
+	height: 3.75rem;
+	color: var(--black);
+	font-size: 3rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -215,9 +79,9 @@ table {
 
 @media screen and (min-width: 960px) {
 	.app__contents__items__item {
-		height: 180px;
-		font-size: 6em;
-		color: #fff;
+		height: 11.25rem;
+		font-size: 6rem;
+		color: var(--white);
 	}
 }
 
@@ -230,29 +94,29 @@ table {
 .app__contents__items__item--7,
 .app__contents__items__item--8,
 .app__contents__items__item--9 {
-	background: #efefef;
-	margin-bottom: 10px;
+	background: var(--white-smoke);
+	margin-bottom: 0.5rem;
 }
 
 .app__contents__items__item--3,
 .app__contents__items__item--5,
 .app__contents__items__item--9 {
-	border-left: 0.3em solid #2f454e;
+	border-left: 0.3rem solid var(--blue-light-1);
 }
 
 .app__contents__items__item--2,
 .app__contents__items__item--4 {
-	border-left: 0.3em solid #2b8ead;
+	border-left: 0.3rem solid var(--blue-light-2);
 }
 
 .app__contents__items__item--1,
 .app__contents__items__item--8 {
-	border-left: 0.3em solid #6f98a8;
+	border-left: 0.3rem solid var(--blue-light-4);
 }
 
 .app__contents__items__item--6,
 .app__contents__items__item--7 {
-	border-left: 0.3em solid #bfbfbf;
+	border-left: 0.3rem solid var(--gray-dark-1);
 }
 
 @media screen and (min-width: 960px) {
@@ -270,50 +134,50 @@ table {
 	.app__contents__items__item--3,
 	.app__contents__items__item--5,
 	.app__contents__items__item--9 {
-		background: #2f454e;
+		background: var(--blue-light-1);
 	}
 
 	.app__contents__items__item--2,
 	.app__contents__items__item--4 {
-		background: #2b8ead;
+		background: var(--blue-light-2);
 	}
 
 	.app__contents__items__item--1,
 	.app__contents__items__item--8 {
-		background: #6f98a8;
+		background: var(--blue-light-4);
 	}
 
 	.app__contents__items__item--6,
 	.app__contents__items__item--7 {
-		background: #bfbfbf;
+		background: var(--gray-dark-1);
 	}
 }
 
 .app__contents__buttons__btn {
 	overflow: visible;
 	display: inline-block;
-	width: 135px;
+	width: 8.4375rem;
 	font-family: inherit;
-	font-size: 16px;
+	font-size: 1rem;
 	text-transform: uppercase;
-	margin: 10px;
-	padding: 0.8em 2em;
-	background: #72c3dc;
-	color: #fff;
-	border: 1px solid #2b8ead;
-	border-radius: 5px;
-	box-shadow: 0px 5px 0px #2b8ead;
-	text-shadow: 1px 1px 1px #2b8ead;
+	margin: 0.5rem;
+	padding: 0.8rem 2rem;
+	background: var(--blue-light-3);
+	color: var(--white);
+	border: 0.0625rem solid var(--blue-light-2);
+	border-radius: 0.3125rem;
+	box-shadow: 0 0.3125rem 0 var(--blue-light-2);
+	text-shadow: 0.0625rem 0.0625rem 0.0625rem var(--blue-light-2);
 	font-weight: 400;
 	transition: All 250ms ease;
 }
 
 @media screen and (min-width: 960px) {
 	.app__contents__buttons__btn {
-		padding: 15px 50px;
+		padding: 1rem 3.125rem;
 		display: block;
-		margin: 25px 22px 0 10px;
-		width: 240px;
+		margin: 1.5rem 1.5rem 0 0.5rem;
+		width: 15rem;
 	}
 }
 
@@ -325,6 +189,6 @@ table {
 
 .app__footer {
 	text-align: center;
-	color: #333;
+	color: var(--dark-charcoal);
 	padding: 0.5rem;
 }

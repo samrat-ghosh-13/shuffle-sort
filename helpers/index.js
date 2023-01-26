@@ -8,7 +8,7 @@ const htmlCollectionToArray = (htmlItems) => {
 	let itemsArr = [];
 	Array.from(htmlItems).forEach((item) => {
 		if (item.nodeType === 1) {
-			// validating the node is an element node, 
+			// validating the node is an element node,
 			// the nodeType property will return 1
 			itemsArr.push(item);
 		}
@@ -23,7 +23,7 @@ const htmlCollectionToArray = (htmlItems) => {
  * @returns none
  */
 const renderItems = (list, items) => {
-	const fragment = new DocumentFragment();
+	let fragment = new DocumentFragment();
 	items.forEach((item) => {
 		fragment.appendChild(item);
 	});
@@ -37,11 +37,10 @@ const renderItems = (list, items) => {
  * @returns none
  */
 const shuffle = () => {
-	let list = document.getElementById("items");
-	let items = list?.childNodes;
-	let itemsArr = htmlCollectionToArray(items);
-	let randomItemsArr = itemsArr
-		.map((item) => {
+	const list = document.getElementById("items");
+	const items = list?.childNodes;
+	const randomItemsArr = htmlCollectionToArray(items)
+		?.map((item) => {
 			return {
 				item,
 				randomNumber: Math.ceil(Math.random() * 10000),
@@ -60,11 +59,11 @@ const shuffle = () => {
  * @returns none
  */
 const sort = () => {
-	let list = document.getElementById("items");
-	let items = list?.childNodes;
-	let itemsArr = htmlCollectionToArray(items);
-
-	itemsArr.sort((a, b) => a.innerText - b.innerText);
+	const list = document.getElementById("items");
+	const items = list?.childNodes;
+	const itemsArr = htmlCollectionToArray(items)?.sort(
+		(a, b) => a.innerText - b.innerText
+	);
 
 	renderItems(list, itemsArr);
 };
