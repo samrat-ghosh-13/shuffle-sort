@@ -10,13 +10,19 @@ The Project is hosted using Github pages.
 
 ## Functionality
 
-1. Follows the Mobile first responsive approach
-2. Sorting DOM nodes by Clicking on the Sort button
-3. Shuffling DOM nodes by Clicking on the Shuffle Button
+* Follows the Mobile first responsive approach
+* Sorting DOM nodes by Clicking on the Sort button
+* Shuffling DOM nodes by Clicking on the Shuffle Button
+
+## Reset CSS
+
+* This project uses Reset CSS to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on.
+
+> https://meyerweb.com/eric/tools/css/reset/
 
 ## Project Structure
 
-```js
+```text
   .
   +-- assets
   |   +-- html5.png
