@@ -36,3 +36,7 @@ The Project is hosted using Github pages.
 ## Lighthouse report 
 
 ![image](https://user-images.githubusercontent.com/22419506/214724826-dc7f97af-dfb0-4058-a8f0-3e3f2981bc83.png)
+
+## Improvements
+
+* There are two colour contrast violations on the Sort and Shuffle Button, need to use better colour combination to increase the contrast ratio. 
