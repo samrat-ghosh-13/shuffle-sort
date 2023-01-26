@@ -7,7 +7,7 @@
 
 @media screen and (min-width: 960px) {
 	.app {
-		background: var(--white);
+		background: var(--white-smoke);
 	}
 }
 
