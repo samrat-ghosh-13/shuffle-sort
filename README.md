@@ -14,12 +14,6 @@ The Project is hosted using Vercel.
 - Sorting DOM nodes by Clicking on the Sort button
 - Shuffling DOM nodes by Clicking on the Shuffle Button
 
-## Reset CSS
-
-- This project uses Reset CSS to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on.
-
-> <https://meyerweb.com/eric/tools/css/reset/>
-
 ## Lighthouse report
 
 ![image](https://user-images.githubusercontent.com/22419506/214724826-dc7f97af-dfb0-4058-a8f0-3e3f2981bc83.png)
