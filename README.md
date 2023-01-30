@@ -20,22 +20,6 @@ The Project is hosted using Github pages.
 
 > <https://meyerweb.com/eric/tools/css/reset/>
 
-## Project Structure
-
-```text
-  .
-  +-- assets
-  |   +-- html5.png
-  +-- styles
-  |   +-- colour.css
-  |   +-- font.css
-  |   +-- reset.css
-  |   +-- styles.css
-  +-- helpers
-  |   +-- index.js
-  +-- index.html
-```
-
 ## Lighthouse report
 
 ![image](https://user-images.githubusercontent.com/22419506/214724826-dc7f97af-dfb0-4058-a8f0-3e3f2981bc83.png)
