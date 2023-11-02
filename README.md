@@ -6,7 +6,7 @@ The Repository contains a project for shuffling and sorting cards using HTML5, C
 
 The Project is hosted using Vercel.
 
-> <https://samrat-ghosh-13.github.io/shuffle-sort/>
+> <https://shuffle-sort.vercel.app/>
 
 ## Functionality
 
